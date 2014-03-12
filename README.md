@@ -20,6 +20,7 @@
 <br/><br/>
 
 ```html
+<script>
 $('#submit').click(function(e){
 
 	var valid = $("#myform").validateForm();
@@ -46,6 +47,7 @@ $('#submit').click(function(e){
 	}
 
 });
+</script>
 ```
 
 <br/>
