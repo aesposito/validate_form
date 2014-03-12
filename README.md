@@ -1,8 +1,6 @@
 <h2>jQuery plugin to validate forms in a simple way</h2>
-
 <br/>
 <a href="http://jsfiddle.net/aesposito/y3E3H/">Demo in jsdiffle.net</a>
-
 <br/>
 <strong>HTML</strong>
 <br/><br/>
@@ -17,7 +15,6 @@
 	<input type="button" value="Submit" id="submit"/> 
 </form>
 ```
-
 <br/>
 <strong>JS</strong>
 <br/><br/>
@@ -85,7 +82,6 @@ $('#submit').click(function(e){
 * Url format
 * Different strings
 
-<br/><br/>
 <h2>Changelog</h2>
 #### 1.0<br/>
 * Add all validators
