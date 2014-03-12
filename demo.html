@@ -1,0 +1,77 @@
+<html>
+<head>
+	<title></title>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="validate_form.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(e){
+
+		$('#submit').click(function(e){
+			$("#myform input").css('background-color', '#FFF');
+			var valid = $("#myform").validateForm();
+			if (!valid.success)
+			{
+				for(var i = 0; i < valid.inputs_error.length; i++)
+				{
+					valid.inputs_error[i].field.css('background-color', 'red');
+					for(var ii = 0; ii < valid.inputs_error[i].errors.length; ii++)
+					{
+						//Error name
+						//valid.inputs_error[i].errors[ii]
+					}	
+				}	
+			}
+			else
+			{
+				$('#submit').val('OK');
+			}
+
+		});
+
+
+	});
+	</script>
+</head>
+<body>
+	<form id="myform">
+		Valid max length 4 <br/>
+		<input type="text" data-validation-maxlength="4"/>
+		<br/><br/>
+
+		Valid min length 2 <br/>
+		<input type="text" data-validation-minlength="2"/>
+		<br/><br/>
+
+		Valid min and max length <br/>
+		<input type="text" data-validation-minlength="2" data-validation-maxlength="4"/>
+		<br/><br/>
+
+		Valid mail format <br/>
+		<input type="text" data-validation-mail="true"/>
+		<br/><br/>
+
+		Valid required field <br/>
+		<input type="text" data-validation-required="true"/>
+		<br/><br/>
+
+		Valid only numbers<br/>
+		<input type="text" data-validation-onlynumbers="true"/>
+		<br/><br/>
+
+		Valid only characters<br/>
+		<input type="text" data-validation-onlycharacters="true"/>
+		<br/><br/>
+
+		Valid url format<br/>
+		<input type="text" data-validation-url="true"/>
+		<br/><br/>
+
+		Valid different string<br/>
+		<input type="text" data-validation-different="hello,bye" data-validation-different-casesensitive="true"/>
+		<br/><br/>
+
+		<input type="button" value="Submit" id="submit"/> 
+	</form>
+
+</body>
+</html>
