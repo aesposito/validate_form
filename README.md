@@ -1,7 +1,7 @@
 <h2>jQuery plugin to validate forms in a simple way</h2>
 <br/>
 <a href="http://jsfiddle.net/aesposito/y3E3H/">Demo in jsdiffle.net</a>
-<br/>
+<br/><br/>
 <strong>HTML</strong>
 <br/><br/>
 ```html
@@ -67,7 +67,6 @@ $('#submit').click(function(e){
 <input type="text" data-validation-mail="true" data-validation-required="true"/>
 <input type="text" data-validation-onlycharacters="true" data-validation-maxlength="9" data-validation-required="true"/>
 ```
-
 
 <br/>
 <strong>Validators</strong>
