@@ -1,3 +1,9 @@
+/*
+validate_form
+jQuery plugin to validate forms in a simple way
+(c) Alexis Esposito 2014 (@alexisesposito)
+*/
+
 (function($) {
     $.fn.validateForm = function() {
         var inputs_error = new Array();
